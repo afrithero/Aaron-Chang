@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width" /> -->
+	<title>Aaron Chang</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/95a27c08f7.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" language="javascript" src="https://app.creately.com/player/creately-player.js"></script>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Microsoft Yahei", Saira;
+		}
+
+		body {
+			background-color: #1e4266;
+		}
+		
+		a {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.banner {
+			display: flex;
+			flex-direction: row;
+			padding-top: 60px;
+			padding-bottom: 30px;
+			background-color: #1e4266;
+		}
+
+				.header-color,
+				h3 {
+					color: #dbbb9a;
+				}
+
+				.profilePic {
+					width: 150px;
+					height: 150px;
+					border-radius: 50%;
+					margin: 40px 0 0 30px; 
+				}
+
+		.container {
+			padding-top: 50px;
+		}
+
+		.resume ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.resume ul li {
+			width: 400px;
+			height: 400px;
+			margin: 0 40px;
+			padding: 20px 20px 20px 25px ;
+			font-size: 22px;
+			list-style: none;
+			text-align: center;
+		}
+
+		.resume ul li:hover {
+			background-color: rgba(218,218,218,0.3);
+		}
+
+		.job-title {
+			margin: 0 auto;
+			width: 350px;
+			height: 50px;
+			padding-top: 20px;
+			color: #DADADA;
+		}
+
+		.job-desc {
+			margin: 8px auto;
+			padding-top: 40px;
+			width: 350px;
+			height: 350px;
+			text-align: left;
+			font-size: 16px;
+			color: #DADADA;
+		}
+
+		.skill {
+			margin-top: 100px;
+		}
+
+		.project,
+		.work {
+			margin-top: 180px;
+		}
+		
+		.nav-tabs {
+    border-bottom: none;
+		}
+		
+		.tab-content {
+			box-sizing: inherit;
+		}
+
+		.project-container {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.project1-left,
+		.project1-right {
+			width: 600px;
+			height: 400px;
+			background-color: #fff;
+		}
+
+		.w-100 {
+		    width: 100%!important;
+		    min-height: -webkit-fill-available;
+		}
+
+		.project1-right {
+			background-color: rgba(255, 250, 240, 0.6);
+		}
+
+		.project1-desc {
+			padding: 10px 15px;
+			text-align: center;
+		}
+
+/* 		.card {
+			margin: 0 30px ;
+		} */
+
+		.button {
+			display: block;
+			margin-left: 120px;
+			/* box-shadow: 0px 1px 0px 0px #1c1b18; */
+			background:linear-gradient(to bottom, #eae0c2 5%, #8a8783 100%);
+			background-color:#c0a992;
+			border-radius:15px;
+			border:1px solid #39536d;
+			display:inline-block;
+			cursor:pointer;
+			color:black;
+			font-size:6px;
+			/* font-weight:bold; */
+			padding:6px 14px;
+			text-decoration:none;
+			/* text-shadow:0px 1px 0px #ffffff; */
+		}
+
+		.button:hover {
+			background:-webkit-linear-gradient(#ccc2a6 5%, #eae0c2 100%);
+			background:-o-linear-gradient(#ccc2a6 2%, #eae0c2 100%);
+			background:linear-gradient(#ccc2a6 2%, #eae0c2 100%);
+			background-color:#ccc2a6;
+		}
+
+		.button:active {
+			position:relative;
+			top:1px;
+		}
+
+		.card {
+		    position: relative;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -ms-flex-direction: column;
+		    flex-direction: column;
+		    min-width: 0;
+		    word-wrap: break-word;
+		    background-color: rgba(255, 250, 240, 0.6);
+		    background-clip: border-box;
+		    border: 1px solid rgba(0,0,0,.125);
+		    border-radius: .25rem;
+		}
+
+		.card-title,
+		.card-desc {
+			color: #212529;
+		}
+
+		.footer {
+			width: 100%;
+			height: 130px;
+			background-color: rgba(0,0,0,0.3);
+			margin-top: 200px;
+		}
+		
+		.footer .container-footer {
+			padding-top: 20px;
+		}
+
+    #my-card {
+    	padding-top: 20px;
+    }
+
+    h3 {
+    	margin-top: 50px;
+    }
+
+		.fab,
+		.fas {
+			display: inline-block;
+			font-size: 20px;
+			color: #e7d4dc;
+			margin-right: 5px;
+		}
+
+		.fa-home {
+			font-size: 30px;
+		}
+
+		.footer-color {
+			color: #e7d4dc;
+			text-decoration: none;
+		}
+
+		a {
+			display: inline-block;
+			margin-left: 5px;
+			color: black;
+		}
+
+		hr {
+			display: block;
+			width: 200px;
+			height: 20px;
+			margin: 0 auto 10px;
+			border-width: 1px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: rgba(0,0,0,0.3)">
+	  <a class="navbar-brand" href="#" style="color:white"><i class="fas fa-home"></i></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <a class="nav-item nav-link active" href="#resume" style="color:white">經歷<span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link active" href="#skill" style="color:white">技能<span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link active" href="#project" style="color:white">過往專案<span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link active" href="#work" style="color:white">個人作品<span class="sr-only">(current)</span></a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="banner jumbotron jumbotron-fluid">
+	  <img src="profile.jpg" class="profilePic">
+	  <div class="container">
+	    <h1 class="display-4 header-color">Aaron Chang</h1>
+	    <p class="lead header-color">熱愛電影、遊戲、音樂。<br>過去於遊戲業擔任行銷職近三年，現投入於大數據分析以及人工智慧領域。</p>
+	  </div>
+	</div>
+	<section class="resume container pt-5" id="resume">
+  	<h3 style="text-align:center">經歷</h3>
+  	<hr>
+  	<ul>
+  			<li>
+  				<div class="job-title">Garena Taiwan</div>
+  				<div class="job-desc">負責的產品為知名線上遊戲《英雄聯盟》，甫進公司的職務內容為在地化遊戲內容，並針對繁體中文的內容進行  QA，由於遊戲改版的頻率相當高，因此時常要在短時間內將大量原文在地化，過程中也時常經歷中文內容無法正確顯示在遊戲畫面內，此時就必須藉由後台偵錯並即時回報狀況給原廠。透過與原廠建立起順暢的雙向溝通，台灣被開發商評為 Garena 各區伺服器表現最佳的一員，而我也在三個月內成長至可以獨立負責產品內容的在地化。</div>
+  			</li>
+  			<li>
+  				<div class="job-title">FunPlus</div>
+  				<div class="job-desc">任職期間負責《英雄聯盟》在東南亞賽區的賽事營運，根據賽事時程在 Facebook, Instagram, YouTube 等平台釋出能夠引起社群話題及熱度的資訊，由於東南亞各國都使用不同的語言，要取得有用的資訊十分不易，而我也因此提升了資訊搜集的能力。公司內有許多來自各國的同事，工作上必須使用大量的英文進行溝通，同時也曾為了籌備線下活動與國外廠商聯繫，這段經歷讓我培養了與來自不同文化背景的人共事需具備的圓滑態度。</div>
+  			</li>
+  			<li>
+  				<div class="job-title">NTC.im 大數據養成班</div>
+  				<div class="job-desc">負責的產品為知名線上遊戲《英雄聯盟》，甫進公司的職務內容為在地化遊戲內容，並針對繁體中文的內容進行  QA，由於遊戲改版的頻率相當高，因此時常要在短時間內將大量原文在地化，過程中也時常經歷中文內容無法正確顯示在遊戲畫面內，此時就必須藉由後台偵錯並即時回報狀況給原廠。透過與原廠建立起順暢的雙向溝通，台灣被開發商評為 Garena 各區伺服器表現最佳的一員，而我也在三個月內成長至可以獨立負責產品內容的在地化。</div>
+  			</li>
+  		</ul>	
+	</section>
+	<section class="skill container pt-5" id="skill">
+  	<h3 style="text-align:center">技能</h3>
+  	<hr>
+		<div id="creately-container-k67h6rwc1"></div>
+	  <div class="row mt-3" id="skill-card">
+	    <ul class="nav nav-tabs nav-justified mt-3 col-12" id="myTab" role="tablist">
+	      <li class="nav-item">
+	        <a class="nav-link active" id="html-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="html" aria-selected="true" style="background-color: rgba(255, 250, 240, 0.8); color:#1b4a58;">Linux 運維</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" id="css-tab" data-toggle="tab" href="#analysis" role="tab" aria-controls="css" aria-selected="false" style="background-color: rgba(255, 250, 240, 0.8); color:#1b4a58;">資料分析與視覺化</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" id="js-tab" data-toggle="tab" href="#machine" role="tab" aria-controls="js" aria-selected="false" style="background-color: rgba(255, 250, 240, 0.8); color:#1b4a58;">機器學習與深度學習</a>
+	      </li>
+	    </ul>
+	    <div class="tab-content " id="myTabContent">
+	      <div class="tab-pane fade show active p-5" id="linux" role="tabpanel" aria-labelledby="html-tab" style="background-color: rgba(255, 250, 240, 0.6)">
+	        <p class="text-left">
+	          HTML5是HTML最新的修訂版本，由全球資訊網協會（W3C）於2014年10月完成標準制定。目標是取代1999年所制定的HTML 4.01和XHTML 1.0標準，以期能在網際網路應用迅速發展的時候，使網路標準達到符合當代的網路需求。廣義論及HTML5時，實際指的是包括HTML、CSS和JavaScript在內的一套技術組合。它希望能夠減少網頁瀏覽器對於需要外掛程式的豐富性網路應用服務（Plug-in-Based Rich Internet Application，RIA），例如：Adobe Flash、Microsoft Silverlight與Oracle JavaFX的需求，並且提供更多能有效加強網路應用的標準集。
+	        </p>
+	      </div>
+	      <div class="tab-pane fade p-5" id="analysis" role="tabpanel" aria-labelledby="css-tab" style="background-color: rgba(255, 250, 240, 0.6)">
+	        <p class="text-left">
+	          層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、層疊樣式表、階層式樣式表，一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。目前最新版本是CSS2.1，為W3C的推薦標準。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+	        </p>
+	      </div>
+	      <div class="tab-pane fade p-5" id="machine" role="tabpanel" aria-labelledby="js-tab" style="background-color: rgba(255, 250, 240, 0.6)">
+	        <p class="text-left">
+	          JavaScript，一種高階程式語言，通過解釋執行，是一門動態型別，物件導向（基於原型）的直譯語言。它已經由ECMA（歐洲電腦製造商協會）通過ECMAScript實現語言的標準化。它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、IE、Firefox、Safari、Opera）支援。JavaScript是一門基於原型、函式先行的語言，是一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函數語言程式設計。它提供語法來操控文字、陣列、日期以及正規表示式等，不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+	<section class="project container pt-5" id="project">
+  	<h3 style="text-align:center">過往專案</h3>
+  	<hr>
+  	<div class="project-container">
+			<div id="carouselExampleIndicators" class="carousel slide project1-left" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="python.png" class="d-block w-100">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="javascript.png" class="d-block w-100">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="JAVA.png" class="d-block w-100">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+  		<div class="project1-right">
+  			<h4 style="text-align:center; margin-top:30px">專案名稱</h4>
+  			<p class="project1-desc" style="margin-top:30px; color=#212529">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia impedit omnis repellat, rem eligendi dolore tempora, cum saepe obcaecati reiciendis similique deserunt doloribus magnam repellendus ea enim totam? Omnis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia impedit omnis repellat, rem eligendi dolore tempora, cum saepe obcaecati reiciendis similique deserunt doloribus magnam repellendus ea enim totam? Omnis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia impedit omnis repellat, rem eligendi dolore tempora, cum saepe obcaecati reiciendis similique deserunt doloribus magnam repellend.</p>
+  		</div>
+  	</div>
+  </section>
+  <section class="work container pt-5" id="work">
+  	<h3 style="text-align:center">個人作品</h3>
+  	<hr>
+		<div class="container my-card" id= "my-card">
+			<div class="row">
+				<div class="col-4">
+				  <div class="card">
+				    <img src="python.png" width=100% height:auto>
+				    <div class="card-body">
+				      <h5 class="card-title">作品一</h5>
+				      <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloribus quod vel voluptate ipsa porro delectus architecto doloremque minima voluptatibus quis dolor neque molestias aspernatur tempora, vero, tempore dolore voluptatum!</p>
+				      <a href="" target="_blank" class="button" style="color:black; text-decoration:none;">查看</a>
+				    </div>
+				  </div>
+				</div>
+				<div class="col-4">
+				  <div class="card">
+				    <img src="python.png" width=100% height:auto>
+				    <div class="card-body">
+				      <h5 class="card-title">作品二</h5>
+				      <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloribus quod vel voluptate ipsa porro delectus architecto doloremque minima voluptatibus quis dolor neque molestias aspernatur tempora, vero, tempore dolore voluptatum!</p>
+				      <a href="" target="_blank" class="button" style="color:black; text-decoration:none;">查看</a>
+				    </div>
+					</div>
+				</div>
+				<div class="col-4">
+				  <div class="card">
+				    <img src="python.png" width=100% height:auto>
+				    <div class="card-body">
+				      <h5 class="card-title">作品三</h5>
+				      <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloribus quod vel voluptate ipsa porro delectus architecto doloremque minima voluptatibus quis dolor neque molestias aspernatur tempora, vero, tempore dolore voluptatum!</p>
+				      <a href="" target="_blank" class="button" style="color:black; text-decoration:none;">查看</a>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer" id="footer">
+		<div class="container container-footer">
+			<div class="row">
+				<div class="col-6">
+					<div class="contact">
+						<h5 class="footer-color">聯繫方式</h5>
+						<ul style="list-style: none">
+							<li class="footer-color"><i class="fab fa-linkedin"></i><a href="http://www.linkedin.com/in/wei-cheng-chang" target="_blank" class="footer-color" style="color: #e7d4dc; text-decoration: none;">My LinkedIn</a></li>
+							<li class="footer-color"><i class="fas fa-envelope-square"></i>&nbsp;afrithero@gmail.com</li>
+							<li class="footer-color"><i class="fas fa-phone-square"></i>&nbsp;+886-987876224</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="note">
+						<h5 class="footer-color">程式紀錄 / 技術共筆</h5>
+						<ul style="list-style: none">
+							<li class="footer-color"><i class="fab fa-github-square"></i><a href="https://github.com/afrithero" target="_blank" class="footer-color" style="color: #e7d4dc; text-decoration: none;">My GitHub</a></li>
+							<li class="footer-color"><i class="fas fa-pen-square"></i><a href="https://afrithero.wordpress.com/" target="_blank" class="footer-color" style="color: #e7d4dc;text-decoration: none;">My Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- JS Function -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
