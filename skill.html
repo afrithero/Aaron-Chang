@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Chang</title>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font:Saira-->
+    <link href="https://fonts.googleapis.com/css2?family=Saira&family=Saira+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/95a27c08f7.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" language="javascript" src="https://app.creately.com/player/creately-player.js"></script>
+    <style>
+          *  {
+  			margin: 0;
+  			padding: 0;
+  			font-family: "Microsoft Yahei", Saira;
+  		}
+
+    		body {
+    			background-color: #1e4266;
+            }
+        
+
+        .fa-home {
+            font-size: 25px;
+            margin-right: 5px;
+            color: #e7d4dc;
+        }
+
+        .services {
+          margin-top: 150px;
+        }
+
+        .services .icon-box {
+            text-align: center;
+            background: rgba(204, 204, 204, 0.1);
+            padding: 80px 20px;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .services .icon-box .icon {
+          margin: 0 auto;
+          width: 64px;
+          height: 64px;
+          background: #18d26e;
+          border-radius: 5px;
+          transition: all .3s ease-out 0s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          transform-style: preserve-3d;
+        }
+
+
+        .services .icon-box .icon::before {
+          position: absolute;
+          content: '';
+          left: -8px;
+          top: -8px;
+          height: 100%;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.15);
+          border-radius: 5px;
+          transition: all .3s ease-out 0s;
+          transform: translateZ(-1px);
+        }
+
+        .services .icon-box h4 {
+          font-weight: 700;
+          margin-bottom: 15px;
+          font-size: 24px;
+        }
+
+        .services .icon-box h4 {
+          color: #e7d4dc;
+        }
+
+        .services .icon-box p {
+          line-height: 24px;
+          font-size: 14px;
+          margin-bottom: 0;
+          color: #fff;
+          text-align: left;
+        }
+
+        .services .icon-box:hover {
+          background: #18d26e;
+          border-color: #18d26e;
+        }
+
+        .services .icon-box:hover .icon {
+          background: #fff;
+        }
+
+/*         .services .icon-box:hover .icon .icon-item {
+          color: #18d26e;
+        } */
+
+        .services .icon-box:hover .icon::before {
+          background: #35e888;
+        }
+
+        .services .icon-box:hover h4, .services .icon-box:hover p {
+          color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: rgba(0,0,0,0.3)">
+        <a class="navbar-brand" href="index.html" style="color:white"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="experience.html" style="color:white">經歷<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#" style="color:white">技能<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="project.html" style="color:white">參與專案<span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+  <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/web.svg", class = 'icon-item' style = "width:30px; height:30px;"/></div>
+              <h4>網頁爬蟲</h4>
+              <p>使用 Python 函式庫撰寫網頁爬蟲程式，並將資料匯入資料庫；在 Linux 作業系統上設定 Crontab，對爬蟲程式進行工作排程，滿足定時且自動爬取網頁內容的需求。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/seo-and-web.svg", style = "width:30px; height:30px;"/></div>
+              <h4>資料清洗及探勘</h4>
+              <p>使用 Python 之 Pandas、Numpy 函式庫進行資料預處理及統計運算，並利用 Scikit-learn 函式庫的線性迴歸及邏輯迴歸模型進行機器學習。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/computing.svg", style = "width:30px; height:30px;"/></div>
+              <h4>資料視覺化</h4>
+              <p>使用 PHP 串接後端資料庫，並以 jQuery 函式庫將資料傳入至前端，透過 Apache ECharts、Chart.js 等 Javascript 庫搭配 Bootstrap 前端框架滿足資料視覺化的需求。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/ui.svg", style = "width:30px; height:30px;"/></div>
+              <h4>Web API</h4>
+              <p>使用 Flask 框架撰寫 Web API 並達成對資料庫進行 CURD 操作的需求。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/interface.svg", style = "width:30px; height:30px;"/></div>
+              <h4>關聯式資料庫</h4>
+              <p>具備在 CentOS 作業系統上架設 MariaDB 以及 phpMyAdmin 資料庫管理工具的能力，並熟悉 SQL 指令以進行資料庫運維以及資料處理。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/database.svg", style = "width:30px; height:30px;"/></div>
+              <h4>非關聯式資料庫</h4>
+              <p>具備在 CentOS 作業系統上架設 MongoDB 及 InfluxDB 的能力，並熟悉資料庫運維以及資料探勘之相關指令。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/elastic.svg", style = "width:30px; height:30px;"/></div>
+              <h4>ELK</h4>
+              <p>具備建置 Elasticsearch、Logstash 及 Kibana 的能力，並使用其達成資料蒐集、預處理、探勘及視覺化的需求。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/hadoop.svg", style = "width:38px; height:38px;"/></div>
+              <h4>Hadoop</h4>
+              <p>具備建置 Hadoop 叢集系統的能力，並使用 Hive 進行資料預處理及探勘。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><embed src="./icon/head.svg", style = "width:30px; height:30px;"/></div>
+              <h4>商業智慧軟體</h4>
+              <p>熟悉 Tableau 及 Splunk 兩項商業智慧軟體在資料處理上的相關操作。</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
